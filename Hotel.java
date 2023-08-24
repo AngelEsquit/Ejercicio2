@@ -82,7 +82,7 @@ public class Hotel {
         suite[1] = habitacion8;
         suite[2] = habitacion9;
 
-        while (true) {
+        while (true) { //Ciclo principal del programa
             asignada = 0;
             System.out.println("");
             System.out.println("***************************************");
@@ -93,7 +93,7 @@ public class Hotel {
             int opcion = scanner.nextInt();
             scanner.nextLine();
 
-            if (opcion == 1) {
+            if (opcion == 1) { // Menú para los empleados
                 System.out.println("");
                 System.out.println("Ingrese la opción que desee. \n 1: Asignar huesped \n 2: Salir");
                 System.out.println("");
@@ -183,7 +183,7 @@ public class Hotel {
                                     break;
                                 }
 
-                                else {
+                                else { // Opción por errores
                                     System.out.println("Ingrese una opción válida.");
                                 }
                             }
@@ -267,7 +267,7 @@ public class Hotel {
                                     break;
                                 }
 
-                                else {
+                                else { // Opción por errores
                                     System.out.println("Ingrese una opción válida.");
                                 }
                             }
@@ -351,7 +351,7 @@ public class Hotel {
                                     break;
                                 }
 
-                                else {
+                                else { // Opción por errores
                                     System.out.println("Ingrese una opción válida.");
                                 }
                             }
@@ -368,12 +368,12 @@ public class Hotel {
                     break;
                 }
 
-                else {
+                else { // Opción por errores
                     System.out.println("Ingrese una opción válida.");
                 }
             }
 
-            else if (opcion == 2) {
+            else if (opcion == 2) { // Menú para los huéspedes
                 System.out.println("");
                 System.out.println("Ingrese la opción que desee. \n 1: Reservar habitación \n 2: Salir");
                 System.out.println("");
@@ -516,16 +516,16 @@ public class Hotel {
                     break;
                 }
 
-                else {
+                else { // Opción por errores
                     System.out.println("Ingrese una opción válida.");
                 }
             }
 
-            else if (opcion == 3) {
+            else if (opcion == 3) { // Salir
                 break;
             }
 
-            else {
+            else { // Opción por errores
                 System.out.println("Ingrese una opción válida.");
             }
         }
