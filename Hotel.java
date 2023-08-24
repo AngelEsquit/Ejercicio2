@@ -115,12 +115,74 @@ public class Hotel {
                                 continue;
                             }
 
-                            else {
+                            else if (estandar[i].getAsignada() != true){
                                 estandar[i].setAsignada(true);
+                                esperaEstandar[i] = null;
                                 asignada = 1;
-                                System.out.println("\nReservó su habitación de manera exitosa");
+                                System.out.println("\nAsignó la habitación de manera exitosa");
                                 break;
                             }
+
+                        if (asignada == 0) {
+                            System.out.println("");
+                            System.out.println("Ingrese la opción que desee. \n 1: Habitación 101 \n 2: Habitación 102 \n 3: Habitación 103 \n 4: Salir");
+                            System.out.println("");
+                            opcion = scanner.nextInt();
+                            scanner.nextLine();
+
+                            if (opcion == 1) {
+                                estandar[0].setAsignada(true);
+                                for (i = 2; i < 3; i -= 1) {
+                                    if (esperaEstandar[i] == null) {
+                                        continue;
+                                    }
+
+                                    else if (esperaEstandar[i] != null) {
+                                        esperaEstandar[i] = null;
+                                    }
+                                }
+                                asignada = 1;
+                                System.out.println("\nAsignó la habitación de manera exitosa");
+                            }
+
+                            else if (opcion == 2) {
+                                estandar[1].setAsignada(true);
+                                for (i = 2; i < 3; i -= 1) {
+                                    if (esperaEstandar[i] == null) {
+                                        continue;
+                                    }
+
+                                    else if (esperaEstandar[i] != null) {
+                                        esperaEstandar[i] = null;
+                                    }
+                                }
+                                asignada = 1;
+                                System.out.println("\nAsignó la habitación de manera exitosa");
+                            }
+
+                            else if (opcion == 3) {
+                                estandar[2].setAsignada(true);
+                                for (i = 2; i < 3; i -= 1) {
+                                    if (esperaEstandar[i] == null) {
+                                        continue;
+                                    }
+
+                                    else if (esperaEstandar[i] != null) {
+                                        esperaEstandar[i] = null;
+                                    }
+                                }
+                                asignada = 1;
+                                System.out.println("\nAsignó la habitación de manera exitosa");
+                            }
+
+                            else if (opcion == 4) {
+                                break;
+                            }
+
+                            else {
+                                System.out.println("Ingrese una opción válida.");
+                            }
+                        }
                         }
                     }
 
