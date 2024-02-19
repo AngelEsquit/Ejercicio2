@@ -1,7 +1,7 @@
 /*
 Universidad del Valle de Guatemala
 Angel Esteban Esquit Hernández - 23221
-Ejercicio 2 - Hotel
+Ejercicio 2 - Hotel - Prueba
 */
 
 import java.util.Scanner;
